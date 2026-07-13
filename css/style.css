@@ -1,4 +1,37 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
+
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header { 
+  display: flex; 
+  gap: 20px; 
+  padding: 15px 0; 
+  border-bottom: 2px solid blue; 
+}
+
+header a {
+  color: blue; 
+  text-decoration: none; 
+  font-weight: 600; 
+}
+section {
+  padding: 20px 0; 
+}
+
+hr { 
+  border: none; 
+  border-top: 1px solid white; 
+}
+
+footer { 
+  padding: 20px 0; 
+  color: gray; 
+  font-size: 14px; }
