@@ -8,17 +8,20 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
 }
 
 header { 
   display: flex; 
   gap: 20px; 
   padding: 15px 0; 
-  border-bottom: 2px solid blue; 
+  border-bottom: 2px solid #2563eb; 
 }
 
 header a {
-  color: blue; 
+  color: #2563eb; 
   text-decoration: none; 
   font-weight: 600; 
 }
@@ -28,10 +31,12 @@ section {
 
 hr { 
   border: none; 
-  border-top: 1px solid white; 
+  border-top: 1px solid #eee; 
 }
 
 footer { 
   padding: 20px 0; 
-  color: gray; 
-  font-size: 14px; }
+  color: #777; 
+  font-size: 14px; 
+}
+
