@@ -2,3 +2,67 @@
   padding: 0;
   margin: 0;
 }
+
+
+.code-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:18px 32px;
+  background:#0a0a10;
+  border-bottom:1px solid #23232f;
+  font-family:'JetBrains Mono', Consolas, monospace;
+}
+
+.brand{
+  font-weight:600;
+  font-size:1rem;
+  color:#f2f0ec;
+  letter-spacing:-0.02em;
+}
+.brand .bracket{
+  color:#ff2e9a;
+}
+
+.code-nav{
+  display:flex;
+  gap:28px;
+}
+
+.code-nav a{
+  position:relative;
+  color:#9a97a8;
+  text-decoration:none;
+  font-size:0.85rem;
+  padding:6px 4px;
+  transition:color 0.2s ease;
+}
+
+.code-nav a .idx{
+  color:#4a4859;
+  margin-right:6px;
+  font-size:0.75rem;
+}
+
+.code-nav a:hover{
+  color:#f2f0ec;
+}
+
+.code-nav a::after{
+  content:"";
+  position:absolute;
+  left:0; bottom:-2px;
+  width:0%;
+  height:1px;
+  background:linear-gradient(90deg,#ff2e9a,#7c3aed);
+  transition:width 0.25s ease;
+}
+
+.code-nav a:hover::after{
+  width:100%;
+}
+
+@media (max-width:560px){
+  .code-header{ padding:16px 20px; }
+  .code-nav{ gap:16px; }
+}
